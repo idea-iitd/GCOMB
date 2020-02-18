@@ -1,0 +1,5 @@
+_bp-feats.npy filter=lfs diff=lfs merge=lfs -text
+_bp-G.json filter=lfs diff=lfs merge=lfs -text
+_bp-id_map.json filter=lfs diff=lfs merge=lfs -text
+_bp-class_map.json filter=lfs diff=lfs merge=lfs -text
+_bp_embeddings200.npy.pickle filter=lfs diff=lfs merge=lfs -text
