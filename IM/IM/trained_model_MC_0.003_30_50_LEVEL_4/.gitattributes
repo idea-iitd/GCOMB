@@ -1,0 +1,17 @@
+model.ckpt-66000.index filter=lfs diff=lfs merge=lfs -text
+events.out.tfevents.1580566811.phantom filter=lfs diff=lfs merge=lfs -text
+graph.pbtxt filter=lfs diff=lfs merge=lfs -text
+model.ckpt-63000.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+model.ckpt-64000.index filter=lfs diff=lfs merge=lfs -text
+model.ckpt-64000.meta filter=lfs diff=lfs merge=lfs -text
+model.ckpt-65000.index filter=lfs diff=lfs merge=lfs -text
+model.ckpt-66000.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+model.ckpt-66000.meta filter=lfs diff=lfs merge=lfs -text
+model.ckpt-67000.index filter=lfs diff=lfs merge=lfs -text
+model.ckpt-65000.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+model.ckpt-65000.meta filter=lfs diff=lfs merge=lfs -text
+model.ckpt-67000.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+model.ckpt-63000.index filter=lfs diff=lfs merge=lfs -text
+model.ckpt-63000.meta filter=lfs diff=lfs merge=lfs -text
+model.ckpt-64000.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+model.ckpt-67000.meta filter=lfs diff=lfs merge=lfs -text
