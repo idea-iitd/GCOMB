@@ -1,0 +1,39 @@
+To train SUP gsage
+
+Run
+ cd GraphSAGE-master
+ python train_multiple.py
+
+Run
+cd GraphSAGE-master
+python predictle_multiple_for_train.py
+
+
+To train RL:
+Run
+python train_RL.py
+
+
+
+Testing
+
+predict gsage embeddings
+
+python predict_multiple.py
+
+
+
+Test RL:
+python easy_testing.py
+
+
+
+To evaluate spread:
+
+Run python im_eval_spread_for_tv.py
+
+
+#1000 graphs are uploaded (GraphSAGE-master/real_data/youtube/TV/test/large_graph/mc_sim_graphs/)
+# You can create more simulation graphs for calculating MC using
+python spread_pre_process.py
+
