@@ -30,8 +30,10 @@ python easy_testing.py
 
 
 To evaluate spread:
+cd Executables
 
-Run python im_eval_spread_for_tv.py
+Run python im_eval_spread_for_ic.py
+
 
 The results of chosen nodes are present in
 
