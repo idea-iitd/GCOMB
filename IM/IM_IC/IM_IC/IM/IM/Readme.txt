@@ -40,6 +40,11 @@ BUDGET is 10,20,50,...200
 SAMPLING RATE is 0.05 etc.
 
 
+To evaluate spread:
+
+cd Executables
+Run python testingim_eval_spread_for_ic.py
+
 
 
 
