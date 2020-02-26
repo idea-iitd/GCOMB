@@ -29,12 +29,6 @@ python easy_testing.py
 
 
 
-To evaluate spread:
-cd Executables
-
-Run python im_eval_spread_for_ic.py
-
-
 The results of chosen nodes are present in
 
 GraphSAGE-master/real_data/ "DATASET"/IC/large_graph-result_RL_"BUDGET"_nbs_"SAMPLINGRATE"
@@ -44,6 +38,8 @@ where DATASET is youtube, stack
 BUDGET is 10,20,50,...200
 
 SAMPLING RATE is 0.05 etc.
+
+
 
 
 
