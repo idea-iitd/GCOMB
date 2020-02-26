@@ -42,3 +42,15 @@ where DATASET is youtube, stack
 BUDGET is 10,20,50,...200
 
 SAMPLING RATE is 0.05 etc.
+
+
+
+To create test data for stack:
+
+cd GraphSage-master/real_data/
+run python conv_train_test_subgraph_type.py
+
+
+
+
+
