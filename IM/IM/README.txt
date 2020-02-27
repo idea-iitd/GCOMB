@@ -6,7 +6,7 @@ Run
 
 Run
 cd GraphSAGE-master
-python predictle_multiple_for_train.py
+python predicte_multiple_for_train.py
 
 
 To train RL:
