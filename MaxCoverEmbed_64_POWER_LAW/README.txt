@@ -39,7 +39,9 @@ ni_1 belongs to left side of bi-partite graph G_bp.
 ni_2 belongs to left side of bi-partite graph G_bp.
 
 
-There is an edge between node ni_1 and nj_2 in G_bp if there is an edge between ni_1 and nj_2 in G.
+Consider two nodes 'ni' and 'nj' in G.
+
+There is an edge between node ni_1 and nj_2 in G_bp if there is an edge between node 'ni' and 'nj' in G.
 
 
 
