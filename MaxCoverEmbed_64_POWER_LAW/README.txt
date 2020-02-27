@@ -1,4 +1,4 @@
-To train SUP gsage
+To train GCN:
 
 Run
 python GraphSAGE-master/train_multiple.py
@@ -9,7 +9,7 @@ python GraphSAGE-master/predict_for_train.py
 
 To train RL:
 Run
-python train_RL.py
+python train_multipleRL.py
 
 
 
@@ -17,14 +17,27 @@ Testing
 
 predict gsage embeddings
 
-python predict_multiple.py
+python predict_multiple_budgeted.py
 
 
 
 Test RL:
-python easy_testing.py
+python easy_pred_mul.py
 
 
+
+Results are saved in 
+
+GraphSAGE-master/real_data/"DATASET"/test/_bp-reward_RL"BUDGET"_nbs0.999
+
+where DATASET is large_gowallah, large_graph_youtube
+BUDGET is 15,25,50 etc.
+
+
+To get results of total time, cover
+run python GCOMB_RESULTS_PARSE_sampling_rate.py
+
+Results are stored GCOMB_BUDGET_RESULTS/
 
 
 
