@@ -19,6 +19,8 @@ Testing
 
 predict gsage embeddings
 
+cd GraphSAGE-master
+
 python predict_multiple.py
 
 
