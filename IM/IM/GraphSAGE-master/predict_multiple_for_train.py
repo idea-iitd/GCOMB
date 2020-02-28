@@ -14,7 +14,7 @@ for i in range(10000,10001):
 #    command = "sh ./supervisedPredict.sh ./graph_data/graph" + str(i) + "/graph" + str(i)
 	for sampling_freq in [0.003]:#[0.003]:#[0.003,0.005,0.007,0.009,0.1]:#[0.003]:# [0.0005,0.001,0.003, 0.005,0.007,0.010,0.05,0.1]:
 
-		for budget in [50]:##[150,200]:#[10, 20,50,100,150,200]:#[10,20,50]:#[20,50,100,150,200]:#[100,150,200]:#1 , 5, 10,15,20,25,50, 100, 150, 200]:
+		for budget in [50,30]:##[150,200]:#[10, 20,50,100,150,200]:#[10,20,50]:#[20,50,100,150,200]:#[100,150,200]:#1 , 5, 10,15,20,25,50, 100, 150, 200]:
 			file=open('interpolate_budget_percentage_real_budget50.pkl'.format(budget), 'rb')
 			dict_interpolate=pickle.load(file)
 			bud_mul_fac = int(dict_interpolate(776564)+1)*1.1
