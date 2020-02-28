@@ -1,23 +1,23 @@
-import os
-import random
-import evaluate
-import json
-from networkx.readwrite import json_graph
-import time
-from networkx.readwrite import  json_graph
-import evaluate_spread
-import sys
+# import os
+# import random
+# #import evaluate
+# import json
+# from networkx.readwrite import json_graph
+# import time
+# from networkx.readwrite import  json_graph
+# #import evaluate_spread
+# import sys
 
 
 import os
-import random
-import evaluate
-import json
-from networkx.readwrite import json_graph
-import time
-from networkx.readwrite import  json_graph
-import evaluate_spread
-import sys
+# import random
+# #import evaluate
+# import json
+# from networkx.readwrite import json_graph
+# import time
+# from networkx.readwrite import  json_graph
+# #import evaluate_spread
+# import sys
 
 num_mc_simulation = 10000
 graphs_to_eval = [
@@ -32,11 +32,12 @@ for graph_path in graphs_to_eval:
                     graph_rl_file=graph_path + "-result_RL_{}_nbs_{}".format(budget, sampling_freq)
 
                     #os.chdir(" Executables; ")
-                    command ="python eval_anything.py " +graph_rl_file+ " {} rl_reward_num_k_{}_nbs_{}.txt test youtube".format(
+                    command ="python eval_anything.py " +'../'+graph_rl_file+ " {} rl_reward_num_k_{}_nbs_{}.txt test youtube".format(
                         budget,budget,sampling_freq
                     )
                     print(command+"\n")
                     os.system("cd Executables;pwd; "+ command)
                  #   print(command,"\n")
                   ##  os.system("ls")
+
 
