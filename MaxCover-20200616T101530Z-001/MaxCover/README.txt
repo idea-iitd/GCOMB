@@ -62,6 +62,8 @@ cd GraphSAGE_master/real_data
 sh download_datasets.sh
 
 
+Processing: Convert edge file to bipartite graph 
+
 For example for twitter:
 Run:
 
