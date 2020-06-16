@@ -1,0 +1,1 @@
+python -m graphsage.supervisedPredict --train_prefix $1 --num_k $2 --model graphsage_meanpool --neighborhood_sampling $3 --bud_mul_fac $4 --sigmoid
