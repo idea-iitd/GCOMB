@@ -1,1 +1,0 @@
-./trained_model_MC/1580553210
