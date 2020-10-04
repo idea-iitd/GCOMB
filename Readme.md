@@ -5,6 +5,8 @@ Code for the paper :
 
 ### To appear in: NeurIPS, 2020.
 
+#### Instructions:
+
 Each folder contains Readme which has the steps to run training and evaluation.
 sh train_script.sh
 sh test_script.sh
