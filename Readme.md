@@ -1,5 +1,5 @@
 Code for the paper :
-## Title : "GCOMB: Learning Budget-constrained Combinatorial Algorithms over Billion-sized Graphs"
+## "GCOMB: Learning Budget-constrained Combinatorial Algorithms over Billion-sized Graphs"
 
 ### Authors : Sahil Manchanda, Akash Mittal, Anuj Dhawan, Sourav Medya, Sayan Ranu, and Ambuj Singh
 
