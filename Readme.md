@@ -1,9 +1,9 @@
 Code for the paper :
-# Title : "GCOMB: Learning Budget-constrained Combinatorial Algorithms over Billion-sized Graphs"
+## Title : "GCOMB: Learning Budget-constrained Combinatorial Algorithms over Billion-sized Graphs"
 
-## Authors : Sahil Manchanda, Akash Mittal, Anuj Dhawan, Sourav Medya, Sayan Ranu, and Ambuj Singh
+### Authors : Sahil Manchanda, Akash Mittal, Anuj Dhawan, Sourav Medya, Sayan Ranu, and Ambuj Singh
 
-## To appear in: NeurIPS, 2020.
+### To appear in: NeurIPS, 2020.
 
 Each folder contains Readme which has the steps to run training and evaluation.
 sh train_script.sh
