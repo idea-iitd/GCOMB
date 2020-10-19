@@ -1,3 +1,6 @@
+# Note : The repository has been moved to https://github.com/idea-iitd/GCOMB.  
+
+
 Code for the paper :
 ## "GCOMB: Learning Budget-constrained Combinatorial Algorithms over Billion-sized Graphs"
 
