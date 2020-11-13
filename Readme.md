@@ -12,6 +12,7 @@ Link : https://arxiv.org/abs/1903.03332
 
 #### Each folder contains Readme which has the steps to run training and evaluation.
 sh train_script.sh
+
 sh test_script.sh
 
 
