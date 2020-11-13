@@ -1,5 +1,3 @@
-# Note : The repository has been moved to https://github.com/idea-iitd/GCOMB.  
-
 
 Code for the paper :
 ## "GCOMB: Learning Budget-constrained Combinatorial Algorithms over Billion-sized Graphs"
@@ -10,9 +8,9 @@ Code for the paper :
 
 Link : https://arxiv.org/abs/1903.03332
 
-#### Instructions:
+### Instructions:
 
-Each folder contains Readme which has the steps to run training and evaluation.
+#### Each folder contains Readme which has the steps to run training and evaluation.
 sh train_script.sh
 sh test_script.sh
 
@@ -25,5 +23,6 @@ Run below command to install python packages
 pip install -r requirements_2.7.txt
 
 
+### More detailed information in the Readme will be updated soon.
 
 
