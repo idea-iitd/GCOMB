@@ -115,7 +115,7 @@ f1.close()
 #exit()
 
 
-print("here")
+print("writing")
 id_map={}
 #
 for node in range(0, total_nodes):
