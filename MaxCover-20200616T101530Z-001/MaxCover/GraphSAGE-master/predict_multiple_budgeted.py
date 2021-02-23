@@ -31,7 +31,7 @@ for type in types:
                 #  #
                 nodes_in_graph=nodes_len_dict[dataset]
                 print("nodes in graph", nodes_in_graph)
-                use_upto=dict_interpolate(nodes_in_graph) *1.3
+                use_upto=dict_interpolate(nodes_in_graph)
                 print("budget , use upto ", budget, use_upto
                 )
                 command="sh ./supervisedPredict.sh ./real_data/{}/".format(dataset) + str(type) + "/_bp" +" " + str(budget) +" " + str(use_upto) + " " +str(sampling_neighborhood)

@@ -10,18 +10,23 @@ Link : https://arxiv.org/abs/1903.03332
 
 ### Instructions:
 
-#### Each folder contains Readme which has the steps to run training and evaluation.
-sh train_script.sh
-
-sh test_script.sh
+#### Each folder contains a Readme file which has the steps to run training and evaluation.
 
 
-Default python version is 2.7.12
-For every other place where python 3.5 is used, python3 is mentioned.
+Default python version is 2.7.12.
+
+For every other place where python 3.5.2 is used, python3 is mentioned.
 
 Run below command to install python packages
 
-pip install -r requirements_2.7.txt
+#### For python2:
+
+pip install -r requirements_python2.7.txt
+
+
+#### For python3:
+
+pip3 install -r requirements_python3.txt
 
 
 ### More detailed information in the Readme will be updated soon.
