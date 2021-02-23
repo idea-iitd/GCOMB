@@ -19,12 +19,12 @@ For every other place where python 3.5.2 is used, python3 is mentioned.
 
 Run below command to install python packages
 
-for python2:
+#### For python2:
 
 pip install -r requirements_python2.7.txt
 
 
-for python3:
+#### For python3:
 
 pip3 install -r requirements_python3.txt
 
