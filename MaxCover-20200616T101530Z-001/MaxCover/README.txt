@@ -59,28 +59,24 @@ SAMPLING_RATE : RUNNING_TIME : NODES_COVERED
 
 For getting test datasets:
 cd GraphSAGE_master/real_data
+
 sh download_datasets.sh
 
 
-Processing: Convert edge file to bipartite graph 
-
-For example for large_graph_youtube:
-Run:
-
-python conv_train_test_subgraph_type.py large_graph_youtube
-python  create_bp.py large_graph_youtube
+Then run sh pre_process.sh
 
 
-For Gowalla
 
-python conv_train_test_subgraph_type.py large_gowallah
-python create_bp.py large_gowallah
+#Will be updated for Gowalla and Twitter snap
+
+#python conv_train_test_subgraph_type.py large_gowallah
+#python create_bp.py large_gowallah
 
 
-For twt snap:
+#For twt snap:
 
-python conv_train_test_subgraph_type.py large_twt_snap
-python create_bp.py large_twt_snap
+#python conv_train_test_subgraph_type.py large_twt_snap
+#python create_bp.py large_twt_snap
 
 
 
