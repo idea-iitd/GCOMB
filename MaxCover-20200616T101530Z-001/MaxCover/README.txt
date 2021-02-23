@@ -64,11 +64,26 @@ sh download_datasets.sh
 
 Processing: Convert edge file to bipartite graph 
 
-For example for twitter:
+For example for large_graph_youtube:
 Run:
 
-run python conv_train_test_subgraph_type.py large_twt_snap
-run create_bp.py large_twt_snap
+python conv_train_test_subgraph_type.py large_graph_youtube
+python  create_bp.py large_graph_youtube
+
+
+For Gowalla
+
+python conv_train_test_subgraph_type.py large_gowallah
+python create_bp.py large_gowallah
+
+
+For twt snap:
+
+python conv_train_test_subgraph_type.py large_twt_snap
+python create_bp.py large_twt_snap
+
+
+
 
 
 
