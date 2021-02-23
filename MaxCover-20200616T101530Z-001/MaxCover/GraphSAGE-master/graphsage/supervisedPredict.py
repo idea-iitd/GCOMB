@@ -522,9 +522,9 @@ def predict(train_data, test_data=None):
 
 
 def main(argv=None):
-	print("Loading training data..")
+	print("Loading  data..")
 	train_data = load_data(FLAGS.train_prefix)
-	print("Done loading training data..")
+	print("Done loading  data..")
 	predict(train_data)
 
 if __name__ == '__main__':
