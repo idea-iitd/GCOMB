@@ -17,11 +17,16 @@ sh test_script.sh
 
 
 Default python version is 2.7.12
-For every other place where python 3.5 is used, python3 is mentioned.
+For every other place where python 3.5.2 is used, python3 is mentioned.
 
 Run below command to install python packages
 
-pip install -r requirements_2.7.txt
+for python2
+pip install -r requirements_python2.7.txt
+
+
+for python3
+pip3 install -r requirements_python3.txt
 
 
 ### More detailed information in the Readme will be updated soon.
