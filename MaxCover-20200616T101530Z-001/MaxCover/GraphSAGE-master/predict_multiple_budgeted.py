@@ -7,7 +7,7 @@ import pickle
 nodes_len_dict= {"large_gowallah":196591,"large_graph_youtube":1134890,"large_orkut":3072441,"large_twt_snap":82000}
 
 
-dataset_list = ["large_graph_youtube","large_gowallah","large_graph_youtube","large_twt_snap"]#:#,"large_graph_youtube","large_twt_snap"]#:##,"large_graph_youtube"]
+dataset_list = ["large_graph_youtube","large_gowallah"]#"["large_graph_youtube","large_gowallah","large_graph_youtube","large_twt_snap"]#:#,"large_graph_youtube","large_twt_snap"]#:##,"large_graph_youtube"]
 
 for type in types:
 

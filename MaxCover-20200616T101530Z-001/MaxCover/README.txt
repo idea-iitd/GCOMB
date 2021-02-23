@@ -67,10 +67,8 @@ Then run sh pre_process.sh
 
 
 
-#Will be updated for Gowalla and Twitter snap
+#Will be updated for Twitter snap
 
-#python conv_train_test_subgraph_type.py large_gowallah
-#python create_bp.py large_gowallah
 
 
 #For twt snap:
