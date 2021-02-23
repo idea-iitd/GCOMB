@@ -10,10 +10,7 @@ Link : https://arxiv.org/abs/1903.03332
 
 ### Instructions:
 
-#### Each folder contains Readme which has the steps to run training and evaluation.
-sh train_script.sh
-
-sh test_script.sh
+#### Each folder contains a Readme file which has the steps to run training and evaluation.
 
 
 Default python version is 2.7.12
