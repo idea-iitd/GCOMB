@@ -1,3 +1,5 @@
+Package                       Version
+----------------------------- ----------------------
 absl-py                       0.2.2
 apturl                        0.5.2
 astor                         0.6.2
@@ -9,6 +11,7 @@ Brlapi                        0.6.4
 chardet                       2.3.0
 checkbox-support              0.22
 command-not-found             0.3
+cryptography                  1.2.3
 decorator                     4.3.0
 defer                         1.0.6
 enum34                        1.1.6
@@ -30,7 +33,7 @@ Mako                          1.0.3
 Markdown                      2.6.11
 MarkupSafe                    0.23
 mock                          2.0.0
-networkx                      1.11
+networkx                      2.4
 numpy                         1.14.5
 oauthlib                      1.0.3
 onboard                       1.2.0
@@ -74,6 +77,19 @@ ubuntu-advantage-tools        19.6
 ubuntu-drivers-common         0.0.0
 ufw                           0.35
 unattended-upgrades           0.1
+unity-scope-calculator        0.1
+unity-scope-chromiumbookmarks 0.1
+unity-scope-colourlovers      0.1
+unity-scope-devhelp           0.1
+unity-scope-firefoxbookmarks  0.1
+unity-scope-gdrive            0.7
+unity-scope-manpages          0.1
+unity-scope-openclipart       0.1
+unity-scope-texdoc            0.1
+unity-scope-tomboy            0.1
+unity-scope-virtualbox        0.1
+unity-scope-yelp              0.1
+unity-scope-zotero            0.1
 urllib3                       1.13.1
 usb-creator                   0.3.0
 Werkzeug                      0.14.1
