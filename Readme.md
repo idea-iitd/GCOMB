@@ -13,7 +13,8 @@ Link : https://arxiv.org/abs/1903.03332
 #### Each folder contains a Readme file which has the steps to run training and evaluation.
 
 
-Default python version is 2.7.12
+Default python version is 2.7.12.
+
 For every other place where python 3.5.2 is used, python3 is mentioned.
 
 Run below command to install python packages
