@@ -43,6 +43,9 @@ while True:
 	if len(line)<2:
 		break
 
+	if(line[0]=='#'):
+		continue
+
 	edges = line.strip()
 	# if len(edges)==0:
 	# continue
