@@ -81,8 +81,9 @@ sh download_datasets.sh
 
 We have used IMM for generating training labelled data since its relatively faster.
 
-
-Run 
+Run to get labels for training dataset
+Default is youtube
+ 
 ./get_train_labels_single.sh
 
 
