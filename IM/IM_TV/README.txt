@@ -80,6 +80,12 @@ sh download_datasets.sh
 
 
 
+
+
+Below steps are in case you wish to generate training data and train interpolator :
+Default is youtube.
+
+
 To get labelled training data:
 
 We have used IMM for generating training labelled data since its relatively faster.
