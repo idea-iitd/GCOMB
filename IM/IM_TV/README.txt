@@ -86,6 +86,19 @@ Below steps are in case you wish to generate training data and train interpolato
 Default is youtube.
 
 
+build imm 
+
+Pre-requisistes:
+
+cd imm_baseline/im_benchmarking-master/sidm029_im_benchmark/Codes/IMM/
+make
+
+
+
+Go to home folder of the project 
+cd ../../../../../../
+
+
 To get labelled training data:
 
 We have used IMM for generating training labelled data since its relatively faster.
@@ -110,7 +123,6 @@ To get interpolator weights
 
 cd GraphSAGE-master
 python3 size_Var_rank_analysis_getlowest.py
-
 
 
 
