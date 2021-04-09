@@ -79,12 +79,34 @@ sh download_datasets.sh
 
 
 
+
+To do training :
+
 We have used IMM for generating training labelled data since its relatively faster.
 
 Run to get labels for training dataset
 Default is youtube
  
 ./get_train_labels_single.sh
+
+
+
+For interpolator 
+
+Run to get labels for training dataset
+Default is youtube
+ 
+ Run 
+./get_train_labels_size_var.sh
+
+
+To get interpolator weights
+
+cd GraphSAGE-master
+python3 size_Var_rank_analysis_getlowest.py
+
+
+
 
 
 
