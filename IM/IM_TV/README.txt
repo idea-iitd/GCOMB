@@ -86,10 +86,9 @@ Below steps are in case you wish to generate training data and train interpolato
 Default is youtube.
 
 
-First you neewd to build imm ( Since we have used IMM for generating training labelled data since its relatively faster.
-)
 
 Pre-requisistes:
+First you need to build IMM ( Since we have used IMM for generating training labelled data since its relatively faster.)
 
 cd imm_baseline/im_benchmarking-master/sidm029_im_benchmark/Codes/IMM/
 make
