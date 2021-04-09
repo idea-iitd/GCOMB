@@ -80,7 +80,7 @@ sh download_datasets.sh
 
 
 
-To do training :
+To get labelled training data:
 
 We have used IMM for generating training labelled data since its relatively faster.
 
@@ -91,13 +91,17 @@ Default is youtube
 
 
 
-For interpolator 
+For training  interpolator :
 
-Run to get labels for training dataset
+
+
+Run to get labels for training dataset for small size subgraphs of train data
 Default is youtube
  
  Run 
 ./get_train_labels_size_var.sh
+
+
 
 
 To get interpolator weights
