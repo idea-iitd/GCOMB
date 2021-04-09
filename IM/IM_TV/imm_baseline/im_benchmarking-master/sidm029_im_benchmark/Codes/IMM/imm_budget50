@@ -1,0 +1,5 @@
+[0;32mProgram Start at: 2019-09-03 22:52:42[0m
+[0;32mProgram version: v1[0m
+Arguments: ./imm_discrete -dataset ../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/edges.txt -k 50 -model IC -epsilon 0.5 -output ../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/large_graph_ic_imm_sol_eps0.5_num_k_50 -seed_random 50015 
+--------------------------------------------------------------------------------
+:../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/:

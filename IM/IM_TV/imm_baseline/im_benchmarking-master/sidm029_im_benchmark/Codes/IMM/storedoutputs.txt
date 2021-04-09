@@ -1,0 +1,54 @@
+Arguments: ./imm_discrete -dataset ../../Dataset/youtube/IC/graph_ic.inf -k 20 -model IC -epsilon 0.1 -output youtube
+--------------------------------------------------------------------------------
+:../../Dataset/youtube/IC/:
+s=1134884
+arg.T=0
+--------------------------------------------------------------------------------
+../../Dataset/youtube/IC/ k=20 epsilon=0.1 IC
+########## Step1 ##########
+x=1 estimate_influence=171274
+x=2 estimate_influence=172169
+x=3 estimate_influence=170967
+########## Step2 ##########
+opt_lower_bound=149784
+step2 finish
+==>youtube
+==>youtube/stat_IMM_IC_20_0.1.txt
+==>youtube/seeds_IMM_IC_20_0.1.txt
+Item Set Start
+1
+21791
+63053
+73825
+108772
+143360
+180850
+198352
+199487
+320447
+351002
+352296
+366974
+378485
+403805
+404153
+422276
+439187
+473988
+711710
+Item Set End
+Memory Usage: 78655.9 MB
+Memory Usage: 78655.9 MB
+===171463 3884.2 78655.9
+g.seedSet=1 21791 63053 73825 108772 143360 180850 198352 199487 320447 351002 352296 366974 378485 403805 404153 422276 439187 473988 711710
+g.InfluenceHyperGraph()=171463
+########## Timer ##########
+Spend  2429.546275 seconds on step1
+Spend  1789.924314 seconds on step2
+Spend  4219.470620 seconds on InfluenceMaximize(Total Time)
+Program Terminate at: 2019-03-29 11:42:02
+Program version: v1
+
+real    64m51.604s
+user    63m49.644s
+sys     1m1.058s

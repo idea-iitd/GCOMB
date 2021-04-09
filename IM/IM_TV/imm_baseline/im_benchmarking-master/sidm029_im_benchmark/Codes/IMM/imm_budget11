@@ -1,0 +1,44 @@
+[0;32mProgram Start at: 2019-09-03 22:52:48[0m
+[0;32mProgram version: v1[0m
+Arguments: ./imm_discrete -dataset ../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/edges.txt -k 11 -model IC -epsilon 0.5 -output ../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/large_graph_ic_imm_sol_eps0.5_num_k_11 -seed_random 50015 
+--------------------------------------------------------------------------------
+:../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/:
+s=1079712 
+arg.T=6.95283e-310 
+--------------------------------------------------------------------------------
+../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/ k=11 epsilon=0.5 IC
+########## Step1 ########## 
+ get reverse reachability set 0x=1 estimate_influence=76235.8 
+ get reverse reachability set 0x=2 estimate_influence=73133.2 
+ get reverse reachability set 0x=3 estimate_influence=74256.5 
+ get reverse reachability set 0x=4 estimate_influence=68722 
+########## Step2 ########## 
+opt_lower_bound=40256.4 
+training_for_gain0 get reverse reachability set 1 id 489349 t 616 id 489424 t 263 id 225416 t 227 id 493237 t 195 id 93805 t 184 id 87661 t 149 id 489079 t 106 id 259290 t 100 id 496501 t 77 id 489219 t 68 id 85349 t 65step2 finish 
+==>../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/large_graph_ic_imm_sol_eps0.5_num_k_11
+==>../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/large_graph_ic_imm_sol_eps0.5_num_k_11/stat_IMM_IC_11_0.5.txt
+==>../../../../../GraphSAGE-master/_large_datasets_eval/youtube/WC/test/large_graph_ic_imm_sol_eps0.5_num_k_11/seeds_IMM_IC_11_0.5.txt
+Item Set Start
+85349
+87661
+93805
+225416
+259290
+489079
+489219
+489349
+489424
+493237
+496501
+Item Set End
+Memory Usage: 206.598 MB
+Memory Usage: 206.598 MB
+===69898.6 0.501362 206.598
+g.seedSet=85349 87661 93805 225416 259290 489079 489219 489349 489424 493237 496501 
+g.InfluenceHyperGraph()=69898.6 
+########## Timer ########## 
+Spend  0.220824 seconds on step1
+Spend  0.323910 seconds on step2
+Spend  0.544776 seconds on InfluenceMaximize(Total Time)
+[0;31mProgram Terminate at: 2019-09-03 22:52:52[0m
+[0;31mProgram version: v1[0m

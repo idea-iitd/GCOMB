@@ -1,0 +1,180 @@
+Running TIM+, Iteration: 1
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test1
+Program Start at: 2017-09-09 19:41:51
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test1 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 19:51:37
+Running TIM+, Iteration: 2
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test2
+Program Start at: 2017-09-09 19:51:37
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test2 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 20:04:42
+Running TIM+, Iteration: 3
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test3
+Program Start at: 2017-09-09 20:04:42
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test3 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.74 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 20:17:19
+Running TIM+, Iteration: 4
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test4
+Program Start at: 2017-09-09 20:17:19
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test4 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.74 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 20:30:10
+Running TIM+, Iteration: 5
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test5
+Program Start at: 2017-09-09 20:30:10
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test5 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 20:42:43
+Running TIM+, Iteration: 6
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test6
+Program Start at: 2017-09-09 20:42:43
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test6 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 20:55:17
+Running TIM+, Iteration: 7
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test7
+Program Start at: 2017-09-09 20:55:17
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test7 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 21:07:33
+Running TIM+, Iteration: 8
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test8
+Program Start at: 2017-09-09 21:07:33
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test8 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 21:19:44
+Running TIM+, Iteration: 9
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test9
+Program Start at: 2017-09-09 21:19:44
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test9 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 21:32:19
+Running TIM+, Iteration: 10
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test10
+Program Start at: 2017-09-09 21:32:19
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test10 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 21:44:34
+Running TIM+, Iteration: 11
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test11
+Program Start at: 2017-09-09 21:44:35
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test11 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 21:56:38
+Running TIM+, Iteration: 12
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test12
+Program Start at: 2017-09-09 21:56:38
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test12 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 22:09:11
+Running TIM+, Iteration: 13
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test13
+Program Start at: 2017-09-09 22:09:12
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test13 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 22:21:21
+Running TIM+, Iteration: 14
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test14
+Program Start at: 2017-09-09 22:21:21
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test14 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 22:33:26
+Running TIM+, Iteration: 15
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test15
+Program Start at: 2017-09-09 22:33:26
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test15 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 22:46:16
+Running TIM+, Iteration: 16
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test16
+Program Start at: 2017-09-09 22:46:16
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test16 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 22:58:34
+Running TIM+, Iteration: 17
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test17
+Program Start at: 2017-09-09 22:58:34
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test17 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.73 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 23:11:11
+Running TIM+, Iteration: 18
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test18
+Program Start at: 2017-09-09 23:11:11
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test18 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.74 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 23:23:43
+Running TIM+, Iteration: 19
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test19
+Program Start at: 2017-09-09 23:23:43
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test19 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.74 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 23:36:14
+Running TIM+, Iteration: 20
+./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model WC -epsilon 0.05 -outdir tim_op_test20
+Program Start at: 2017-09-09 23:36:14
+Arguments: ./tim -dataset ../../Dataset/hepph/graph_wc.inf -k 200 -model IC -epsilon 0.05 -outdir tim_op_test20 
+--------------------------------------------------------------------------------
+
+Memory Usage: 2562.74 MB
+--------------------------------------------------------------------------------
+Program Ends Successfully at: 2017-09-09 23:48:53

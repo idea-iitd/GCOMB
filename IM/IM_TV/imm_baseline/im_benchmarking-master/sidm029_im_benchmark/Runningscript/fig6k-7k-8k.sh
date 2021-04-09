@@ -1,0 +1,187 @@
+#!/bin/bash
+execfilecelf="../Executables/celf"
+execfilecelfpp="../Executables/celfpp"
+execfileeasyim="../Executables/easyimLT"
+execfileimm="../Executables/imm"
+execfiletim="../Executables/tim"
+execfilepmc="../Executables/pmc"
+execfileimrank="../Executables/imrank"
+execfilesg="../Executables/sg"
+execfileirie="../Executables/irie"
+execfilesimpath="../Executables/simpath"
+execfileldag="../Executables/ldag"
+
+pathtograph="../Dataset/dblp/graph_lt.inf"
+model="LT"
+ldagmodel="LT"
+simpathModel="LTNew"
+
+outputcelf="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/celf"
+outputcelfpp="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/celfpp"
+outputeasyim="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/easyim"
+outputimm="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/imm"
+outputtim="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/tim"
+outputpmc="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/pmc"
+outputimrank="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/imrank"
+outputsg="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/sg"
+outputirie="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/irie"
+outputsimpath="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/simpath"
+outputldag="../Results/freshRuns/algorithmOutput/fig6k-7k-8k/ldag"
+
+mkdir -p ../Results/freshRuns/algorithmOutput/fig6k-7k-8k
+mkdir -p ../Results/freshRuns/processed/fig6k-7k-8k
+mkdir -p $outputcelf
+mkdir -p $outputcelfpp
+mkdir -p $outputeasyim
+mkdir -p $outputimm
+mkdir -p $outputtim
+mkdir -p $outputpmc
+mkdir -p $outputimrank
+mkdir -p $outputsg
+mkdir -p $outputirie
+mkdir -p $outputsimpath
+mkdir -p $outputldag
+
+execFlow="../Executables/ltFlow"
+execFlowSeeds="../Executables/ltFlowSeeds"
+
+flowiter=10000
+celf_mc=10000
+celfpp_mc=10000
+pmc_r=200
+sg_r=250
+easyim_iter=25
+imrank_rounds=10
+tim_eps=0.35
+imm_eps=0.1
+simpath_mc=10000
+ldag_mc=10000
+simpath_phase=17
+ldag_phase=15
+
+#for l in 1 2
+#do
+#	echo "Running IMRank"$l
+#	for seeds in 1 2 5 10 25 50 75 100 125 150 175 200 
+#	do
+#		echo "imrank k="$seeds "rounds="$imrank_rounds
+#		cd ../Codes/imrank
+#		g++  -g -std=c++11  -g -o mymain limit.h general_cascade.cpp graph.cpp random.cpp degree.cpp greedy.cpp degreediscount_ic.cpp weightedegree.cpp SPM_gc.cpp SP1M_gc.cpp pmia.cpp pagerank.cpp mia.cpp IMRank.cpp main.cpp -w "-DIMRank_LOOP="$imrank_rounds "-DSET_SIZE="$seeds -DMAX_NODE=15229 -DMAX_EDGE=62752
+#		cp mymain ../../Executables/imrank
+#		cd ..
+#		echo $execfileimrank -imrank $l "IC" $pathtograph $outputimrank
+#		$execfileimrank -imrank $l "IC" $pathtograph $outputimrank
+#		
+#		echo $execFlowSeeds $pathtograph $outputimrank"/seedIMRank_k"$seeds"_l"$l"_LOOP"$imrank_rounds"_irDegree.txt" $seeds 1 $flowiter 3 $outputimrank"/flowstat_l="$l"_rounds="$imrank_rounds".txt" $outputimrank"/spreadl="$l"_rounds="$imrank_rounds".txt"
+#		$execFlowSeeds $pathtograph $outputimrank"/seedIMRank_k"$seeds"_l"$l"_LOOP"$imrank_rounds"_irDegree.txt" $seeds 1 $flowiter 3 $outputimrank"/flowstat_l="$l"_rounds="$imrank_rounds".txt" $outputimrank"/spreadl="$l"_rounds="$imrank_rounds".txt"
+#	done
+#done
+#cd ../Runningscript
+#
+#echo "Running IRIE"
+##for seeds in 1 2 5 10 25 50 75 100 125 150 175 200
+##do
+#	echo "IRIE k="$seeds
+#	cd ../Codes/irie
+#	g++  -g -std=c++11  -g -o mymain *.cpp -DMAX_NODE=15229 -DMAX_EDGE=125504
+#	cp mymain ../../Executables/irie
+#	cd ..
+#	echo $execfileirie" -irie "$seeds" 0.7 0.7 "$outputirie $pathtograph	
+#	$execfileirie -irie $seeds 0.7 0.7 $outputirie $pathtograph	
+#
+#	echo $execFlowSeeds $pathtograph $outputirie"/seedFileseeds-"$seeds".txt" $seeds 1 $flowiter 3 $outputirie"/flowstat_alpha=0.7" $outputirie"/spread_alpha=0.7.txt"
+#	$execFlowSeeds $pathtograph $outputirie"/seedFileseeds-"$seeds".txt" $seeds 1 $flowiter 3 $outputirie"/flowstat_alpha=0.7" $outputirie"/spread_alpha=0.7.txt"
+#done
+#cd ../Runningscript
+#
+#echo "Running PMC"
+#echo $execfilepmc $pathtograph 200 $pmc_r $outputpmc #graph k R outdir 
+#$execfilepmc $pathtograph 200 $pmc_r $outputpmc #graph k R outdir 
+##[sainyam@swarm2 Runningscript]$ less ../Results/freshRuns/algorithmOutput/fig4f/pmc/seeds_PMC_IC_1.txt 
+#echo $execFlow $pathtograph $outputpmc"/seeds_PMC_IC_"$pmc_r".txt" 200 1 $flowiter 3 $outputpmc"/flowstat_"$pmc_r".txt" $outputpmc"/spread_"$pmc_r".txt"
+#$execFlow $pathtograph $outputpmc"/seeds_PMC_IC_"$pmc_r".txt" 200 1 $flowiter 3 $outputpmc"/flowstat_"$pmc_r".txt" $outputpmc"/spread_"$pmc_r".txt"
+#
+#echo "Running SG"
+#for seeds in 1 2 5 10 25 50 75 100 125 150 175 200
+#do
+#	echo "static greedy k="$seeds
+#	cd ../Codes/static_greedy
+#	g++  -g -std=c++11  -g -o mymain *.cpp -DMAX_NODE=15229 -DMAX_EDGE=125504
+#	cp mymain ../../Executables/sg
+#	cd ..
+#	echo $execfilesg $pathtograph $seeds $sg_r" sgd "$outputsg	
+#	$execfilesg $pathtograph $seeds $sg_r sgd $outputsg	
+#
+#	echo $execFlowSeeds $pathtograph $outputsg"/seedStaticGreedyUD_SGD_R"$sg_r"_k"$seeds".txt"  $seeds 1 $flowiter 3 $outputsg"/flowstat_snapshots="$sg_r $outputsg"/spreadsnapshots="$sg_r".txt"
+#	$execFlowSeeds $pathtograph $outputsg"/seedStaticGreedyUD_SGD_R"$sg_r"_k"$seeds".txt"  $seeds 1 $flowiter 3 $outputsg"/flowstat_snapshots="$sg_r $outputsg"/spreadsnapshots="$sg_r".txt"
+#done
+#cd ../Runningscript
+
+echo "Running IMM"
+for seeds in 1 2 5 10 25 50 75 100 125 150 175 200
+do
+	echo $execfileimm" -dataset "$pathtograph" -k "$seeds" -model "$model" -epsilon "$imm_eps" -output "$outputimm
+	$execfileimm -dataset $pathtograph -k $seeds -model $model -epsilon $imm_eps -output $outputimm
+	cat $outputimm"/stat_IMM_"$model"_"$seeds"_"$imm_eps".txt"  >> ../Results/freshRuns/processed/fig6k-7k-8k/immtime.txt
+	echo $execFlowSeeds $pathtograph $outputimm"/seeds_IMM_LT_"$seeds"_"$imm_eps".txt "$seeds 1 $flowiter 3 $outputimm"/flowstat_"$imm_eps $outputimm"/spread_"$imm_eps
+	$execFlowSeeds $pathtograph $outputimm"/seeds_IMM_LT_"$seeds"_"$imm_eps".txt" $seeds 1 $flowiter 3 $outputimm"/flowstat_"$imm_eps $outputimm"/spread_"$imm_eps
+done
+cp $outputimm"/flowstat_"$imm_eps"_300" ../Results/freshRuns/processed/fig6k-7k-8k/imm.txt
+
+echo "Running TIM+"
+for seeds in 1 2 5 10 25 50 75 100 125 150 175 200
+do
+	echo $execfiletim" -dataset "$pathtograph" -k "$seeds" -model "$model" -epsilon "$tim_eps" -outdir "$outputtim
+	$execfiletim -dataset $pathtograph -k $seeds -model $model -epsilon $tim_eps -outdir $outputtim
+	cat $outputtim"/stat_TIM_"$model"_"$seeds"_"$tim_eps".txt" >> ../Results/freshRuns/processed/fig6k-7k-8k/timtime.txt
+	echo $execFlowSeeds $pathtograph $outputtim"/seeds_TIM_LT_"$seeds"_"$tim_eps".txt "$seeds 1 $flowiter 3 $outputtim"/flowstat_"$tim_eps $outputtim"/spread_"$tim_eps
+	$execFlowSeeds $pathtograph $outputtim"/seeds_TIM_LT_"$seeds"_"$tim_eps".txt" $seeds 1 $flowiter 3 $outputtim"/flowstat_"$tim_eps $outputtim"/spread_"$tim_eps
+done
+cp $outputtim"/flowstat_"$tim_eps"_300" ../Results/freshRuns/processed/fig6k-7k-8k/tim.txt
+
+echo "Running EaSyIM"
+for seeds in 1 2 5 10 25 50 75 100 125 150 175 200
+do
+	echo $execfileeasyim $pathtograph 2 $seeds 1 $easyim_iter 3 $outputeasyim
+	$execfileeasyim $pathtograph 2 $seeds 1 $easyim_iter 3 $outputeasyim
+	cat $outputeasyim"/stat_seeds="$seeds"_iter="$easyim_iter"_depth=3.txt" >> ../Results/freshRuns/processed/fig6k-7k-8k/easyimtime.txt
+	echo $execFlowSeeds $pathtograph $outputeasyim"/seeds_seeds="$seeds"_iter="$easyim_iter"_depth=3.txt" $seeds 1 $flowiter 3 $outputeasyim"/flowstat_"$easyim_iter".txt" $outputeasyim"/spread.txt"
+	$execFlowSeeds $pathtograph $outputeasyim"/seeds_seeds="$seeds"_iter="$easyim_iter"_depth=3.txt" $seeds 1 $flowiter 3 $outputeasyim"/flowstat_"$easyim_iter".txt" $outputeasyim"/spread.txt"
+done
+cp $outputeasyim"/flowstat_"$easyim_iter".txt_300" ../Results/freshRuns/processed/fig6k-7k-8k/easyim.txt
+echo "Running SIMPATH" 
+echo $execfilesimpath" -propModel "$simpathmodel" -mcruns "$simpath_mc" -budget 200 -celfPlus 1 -phase "$simpathPhase" -cutoff 0.001 -topl 4 -probGraphFile "$pathtograph" -outdir "$outputsimpath
+$execfilesimpath -propModel $simpathmodel -mcruns $simpath_mc -budget 200 -celfPlus 1 -phase $simpathPhase -cutoff 0.001 -topl 4 -probGraphFile $pathtograph -outdir $outputsimpath
+cp $outputcelf"/stats_SIMPATH_LT_"$simpath_mc".txt" ../Results/freshRuns/processed/fig6k-7k-8k/simpathtime.txt
+
+echo $execFlow $pathtograph $outputsimpath"/seeds_LT_"$simpath_mc".txt" 200 1 $flowiter 3 $outputsimpath"/flowstat_"$simpath_mc".txt" $outputsimpath"/spread.txt"
+$execFlow $pathtograph $outputsimpath"/seeds_LT_"$simpath_mc".txt" 200 1 $flowiter 3 $outputsimpath"/flowstat_"$simpath_mc".txt" $outputsimpath"/spread.txt"
+cp $outputcelf"/flowstat_"$simpath_mc".txt_300" ../Results/freshRuns/processed/fig6k-7k-8k/simpath.txt
+
+echo "Running LDAG" 
+echo $execfileldag" -propModel "$ldagmodel" -mcruns "$ldag_mc" -budget 200 -phase "$ldagPhase" -tol_ldag 0.003125 -probGraphFile "$pathtograph" -outdir "$outputldag
+$execfileldag -propModel $ldagmodel -mcruns $ldag_mc -budget 200 -phase $ldagPhase -tol_ldag 0.003125 -probGraphFile $pathtograph -outdir $outputldag
+cp $outputcelf"/stats_LDAG_LT_"$ldag_mc".txt" ../Results/freshRuns/processed/fig6k-7k-8k/ldagtime.txt
+
+echo $execFlow $pathtograph $outputldag"/seeds_LT_"$ldag_mc".txt" 200 1 $flowiter 3 $outputldag"/flowstat_"$ldag_mc".txt" $outputldag"/spread.txt"
+$execFlow $pathtograph $outputldag"/seeds_LT_"$ldag_mc".txt" 200 1 $flowiter 3 $outputldag"/flowstat_"$ldag_mc".txt" $outputldag"/spread.txt"
+cp $outputcelf"/flowstat_"$ldag_mc".txt_300" ../Results/freshRuns/processed/fig6k-7k-8k/ldag.txt
+
+echo "Running CELF" 
+echo $execfilecelf" -propModel "$model" -mcruns "$celf_mc" -budget 200 -celfPlus 0 -probGraphFile "$pathtograph" -outdir "$outputcelf
+$execfilecelf -propModel $model -mcruns $celf_mc -budget 200 -celfPlus 0 -probGraphFile $pathtograph -outdir $outputcelf
+cp $outputcelf"/stats_CELF_LT_"$celf_mc".txt" ../Results/freshRuns/processed/fig6k-7k-8k/celftime.txt
+
+echo $execFlow $pathtograph $outputcelf"/seeds_CELF_LT_"$celf_mc".txt" 200 1 $flowiter 3 $outputcelf"/flowstat_"$celf_mc".txt" $outputcelf"/spread.txt"
+$execFlow $pathtograph $outputcelf"/seeds_CELF_LT_"$celf_mc".txt" 200 1 $flowiter 3 $outputcelf"/flowstat_"$celf_mc".txt" $outputcelf"/spread.txt"
+cp $outputcelf"/flowstat_"$celf_mc".txt_300" ../Results/freshRuns/processed/fig6k-7k-8k/celf.txt
+
+echo "Running CELF++"
+echo $execfilecelfpp" -propModel "$model" -mcruns "$celfpp_mc" -budget 200 -celfPlus 1 -probGraphFile "$pathtograph" -outdir "$outputcelfpp
+$execfilecelfpp -propModel $model -mcruns $celfpp_mc -budget 200 -celfPlus 1 -probGraphFile $pathtograph -outdir $outputcelfpp
+cp $outputcelfpp"/stats_CELF++_LT_"$celfpp_mc".txt" ../Results/freshRuns/processed/fig6k-7k-8k/celfpptime.txt
+
+echo $execFlow $pathtograph $outputcelfpp"/seeds_CELF++_LT_"$celfpp_mc".txt" 200 1 $flowiter 3 $outputcelfpp"/flowstat_"$celfpp_mc".txt" $outputcelfpp"/spread.txt"
+$execFlow $pathtograph $outputcelfpp"/seeds_CELF++_LT_"$celfpp_mc".txt" 200 1 $flowiter 3 $outputcelfpp"/flowstat_"$celfpp_mc".txt" $outputcelfpp"/spread.txt"
+cp $outputcelfpp"/flowstat_"$celfpp_mc".txt_300" ../Results/freshRuns/processed/fig6k-7k-8k/celfpp.txt
+

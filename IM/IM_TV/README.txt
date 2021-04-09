@@ -79,4 +79,11 @@ sh download_datasets.sh
 
 
 
+We have used IMM for generating training labelled data since its relatively faster.
+
+
+Run 
+./get_train_labels_single.sh
+
+
 
