@@ -93,15 +93,11 @@ Default is youtube
 
 For training  interpolator :
 
-
-
 Run to get labels for training dataset for small size subgraphs of train data
 Default is youtube
  
  Run 
 ./get_train_labels_size_var.sh
-
-
 
 
 To get interpolator weights
