@@ -94,17 +94,15 @@ cd imm_baseline/im_benchmarking-master/sidm029_im_benchmark/Codes/IMM/
 make
 
 
-
 Go to home folder of the project 
 cd ../../../../../../
 
 
-To get labelled training data:
-
+To get labelled training data: 
 We have used IMM for generating training labelled data since its relatively faster.
 
-Run to get labels for training dataset
-Default is youtube
+Run below to get labels for training dataset
+(Default is youtube)
  
 ./get_train_labels_single.sh
 
