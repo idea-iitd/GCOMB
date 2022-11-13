@@ -29,6 +29,5 @@ pip install -r requirements_python2.7.txt
 pip3 install -r requirements_python3.txt
 
 
-### More detailed information in the Readme will be updated soon.
 
 
